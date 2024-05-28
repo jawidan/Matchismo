@@ -5,21 +5,19 @@
 //  Created by Javidan Ibrahimov on 28.05.2024.
 //
 
-
-#import <Foundation/Foundation.h>
 #import "Card.h"
 
-@implementation Card : NSObject
+@implementation Card
 
--(int)match:(NSArray *)otherCards
-{
+- (int)match:(NSArray *)otherCards {
     int score = 0;
-
-    for(Card* card in otherCards){
+    
+    for (Card *card in otherCards) {
         if ([card.contents isEqualToString:self.contents]) {
-            score++;
+            score = 1;
         }
     }
+    
     return score;
 }
 

@@ -1,5 +1,5 @@
 //
-//  playingCard.h
+//  PlayingCard.h
 //  Matchismo
 //
 //  Created by Javidan Ibrahimov on 28.05.2024.
@@ -12,7 +12,8 @@
 @property (strong, nonatomic) NSString *suit;
 @property (nonatomic) NSUInteger rank;
 
-+(NSArray*) validSuits;
-+(NSUInteger) maxRank;
++ (NSArray *)validSuits;
++ (NSUInteger)maxRank;
++ (NSArray *)rankStrings;
 
 @end
