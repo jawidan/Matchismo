@@ -48,7 +48,6 @@
     self.flipCount += 1;
     
     self.counterLabel.text = [NSString stringWithFormat:@"Number of times you flipped : %lu", self.flipCount];
-    
 }
 
 - (void)showCardFront:(UIButton *)button {
@@ -58,7 +57,6 @@
         
         [button setTitle:cardTitle forState:UIControlStateNormal];
         [button setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
-        
     }
     else {
         [self endTheGame];
