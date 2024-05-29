@@ -42,18 +42,7 @@
 - (IBAction)tappedButton:(UIButton *)sender {
     
     if (self.isShowingBack){
-        
-        PlayingCard *randomCard = (PlayingCard *)[self.deck drawRandomCard];
-        if (randomCard != nil) {
-            NSString *cardTitle = [NSString stringWithFormat:@"%@%@", [PlayingCard rankStrings][randomCard.rank], randomCard.suit];
-            
-            [sender setTitle:cardTitle forState:UIControlStateNormal];
-            [sender setBackgroundImage:[UIImage imageNamed:@"blank card hi-res"] forState:UIControlStateNormal];
-            
-        }
-        else {
-            [self endTheGame:sender];
-        }
+        [self showCardFront:sender];
     }
     else {
         [self showCardBack:sender];
@@ -64,7 +53,20 @@
     
     self.counterLabel.text = [NSString stringWithFormat:@"Number of times you flipped : %lu", self.flipCount];
     
+}
 
+- (void)showCardFront:(UIButton *)button {
+        PlayingCard *randomCard = (PlayingCard *)[self.deck drawRandomCard];
+    if (randomCard != nil) {
+        NSString *cardTitle = [NSString stringWithFormat:@"%@%@", [PlayingCard rankStrings][randomCard.rank], randomCard.suit];
+        
+        [button setTitle:cardTitle forState:UIControlStateNormal];
+        [button setBackgroundImage:[UIImage imageNamed:@"blank card hi-res"] forState:UIControlStateNormal];
+        
+    }
+    else {
+        [self endTheGame:button];
+    }
 }
 
 - (void)showCardBack:(UIButton *)button {
