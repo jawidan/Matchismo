@@ -61,7 +61,7 @@
         NSString *cardTitle = [NSString stringWithFormat:@"%@%@", [PlayingCard rankStrings][randomCard.rank], randomCard.suit];
         
         [button setTitle:cardTitle forState:UIControlStateNormal];
-        [button setBackgroundImage:[UIImage imageNamed:@"blank card hi-res"] forState:UIControlStateNormal];
+        [button setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
         
     }
     else {
