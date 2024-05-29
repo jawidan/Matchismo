@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7916866C2C0607A300DE8EC0 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916866B2C0607A300DE8EC0 /* Deck.m */; };
 		794BDCC02C05E2760051ECAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 794BDCBF2C05E2760051ECAA /* AppDelegate.m */; };
 		794BDCC32C05E2760051ECAA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 794BDCC22C05E2760051ECAA /* SceneDelegate.m */; };
 		794BDCC62C05E2760051ECAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794BDCC52C05E2760051ECAA /* ViewController.m */; };
@@ -17,6 +18,9 @@
 		794BDCDB2C05E2770051ECAA /* MatchismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 794BDCDA2C05E2770051ECAA /* MatchismoTests.m */; };
 		794BDCE52C05E2770051ECAA /* MatchismoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 794BDCE42C05E2770051ECAA /* MatchismoUITests.m */; };
 		794BDCE72C05E2770051ECAA /* MatchismoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 794BDCE62C05E2770051ECAA /* MatchismoUITestsLaunchTests.m */; };
+		796FD7E02C05F9F400C797B7 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD7DF2C05F9F400C797B7 /* Card.m */; };
+		79D175372C06032600DDC867 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D175362C06032600DDC867 /* PlayingCard.m */; };
+		79D1753B2C06065E00DDC867 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D1753A2C06065E00DDC867 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7916866B2C0607A300DE8EC0 /* Deck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 		794BDCBB2C05E2760051ECAA /* Matchismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		794BDCBE2C05E2760051ECAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		794BDCBF2C05E2760051ECAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +59,13 @@
 		794BDCE02C05E2770051ECAA /* MatchismoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchismoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		794BDCE42C05E2770051ECAA /* MatchismoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchismoUITests.m; sourceTree = "<group>"; };
 		794BDCE62C05E2770051ECAA /* MatchismoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchismoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		796FD7DF2C05F9F400C797B7 /* Card.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		796FD7E12C05FA0300C797B7 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		79D175362C06032600DDC867 /* PlayingCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		79D175382C06034900DDC867 /* PlayingCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		79D1753A2C06065E00DDC867 /* PlayingCardDeck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		79D1753C2C06066900DDC867 /* PlayingCardDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		79E6AD7E2C05FEAA00E6862C /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,7 @@
 		794BDCBD2C05E2760051ECAA /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
+				796FD7DE2C05F9DC00C797B7 /* Model */,
 				794BDCBE2C05E2760051ECAA /* AppDelegate.h */,
 				794BDCBF2C05E2760051ECAA /* AppDelegate.m */,
 				794BDCC12C05E2760051ECAA /* SceneDelegate.h */,
@@ -134,6 +147,53 @@
 				794BDCE62C05E2770051ECAA /* MatchismoUITestsLaunchTests.m */,
 			);
 			path = MatchismoUITests;
+			sourceTree = "<group>";
+		};
+		796FD7DE2C05F9DC00C797B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79D175392C06062D00DDC867 /* PlayingCardDeck */,
+				79D175352C06031000DDC867 /* PlayingCard */,
+				79E6AD7D2C05FE9F00E6862C /* Deck */,
+				79E6AD7C2C05FDE000E6862C /* Card */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79D175352C06031000DDC867 /* PlayingCard */ = {
+			isa = PBXGroup;
+			children = (
+				79D175362C06032600DDC867 /* PlayingCard.m */,
+				79D175382C06034900DDC867 /* PlayingCard.h */,
+			);
+			path = PlayingCard;
+			sourceTree = "<group>";
+		};
+		79D175392C06062D00DDC867 /* PlayingCardDeck */ = {
+			isa = PBXGroup;
+			children = (
+				79D1753A2C06065E00DDC867 /* PlayingCardDeck.m */,
+				79D1753C2C06066900DDC867 /* PlayingCardDeck.h */,
+			);
+			path = PlayingCardDeck;
+			sourceTree = "<group>";
+		};
+		79E6AD7C2C05FDE000E6862C /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				796FD7DF2C05F9F400C797B7 /* Card.m */,
+				796FD7E12C05FA0300C797B7 /* Card.h */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		79E6AD7D2C05FE9F00E6862C /* Deck */ = {
+			isa = PBXGroup;
+			children = (
+				79E6AD7E2C05FEAA00E6862C /* Deck.h */,
+				7916866B2C0607A300DE8EC0 /* Deck.m */,
+			);
+			path = Deck;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +326,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7916866C2C0607A300DE8EC0 /* Deck.m in Sources */,
+				796FD7E02C05F9F400C797B7 /* Card.m in Sources */,
 				794BDCC62C05E2760051ECAA /* ViewController.m in Sources */,
+				79D175372C06032600DDC867 /* PlayingCard.m in Sources */,
 				794BDCC02C05E2760051ECAA /* AppDelegate.m in Sources */,
+				79D1753B2C06065E00DDC867 /* PlayingCardDeck.m in Sources */,
 				794BDCD12C05E2770051ECAA /* main.m in Sources */,
 				794BDCC32C05E2760051ECAA /* SceneDelegate.m in Sources */,
 			);
