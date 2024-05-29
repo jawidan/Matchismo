@@ -5,7 +5,7 @@
 //  Created by Javidan Ibrahimov on 28.05.2024.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import "Card.h"
 
 @interface Deck : NSObject

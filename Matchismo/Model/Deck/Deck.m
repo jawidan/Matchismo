@@ -14,9 +14,7 @@
 @implementation Deck
 
 - (NSMutableArray *)cards {
-    if (!_cards) {
-        _cards = [[NSMutableArray alloc] init];
-    }
+    if (!_cards) _cards = [[NSMutableArray alloc]init];
     return _cards;
 }
 
