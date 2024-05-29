@@ -24,7 +24,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3FS-Mk-2Hd"/>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d52-tu-Ks8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of times you flipped : 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Urj-ei-9Ey">
@@ -46,6 +46,7 @@
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                     <connections>
+                        <outlet property="cardButton" destination="zhM-2e-1Er" id="75b-Ev-nDS"/>
                         <outlet property="counterLabel" destination="Urj-ei-9Ey" id="lc3-vx-3zL"/>
                         <outlet property="gameOverLabel" destination="lhM-Lt-Pha" id="QTj-e3-UUX"/>
                     </connections>

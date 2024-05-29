@@ -8,12 +8,12 @@
 #import "Deck.h"
 
 @interface Deck()
-@property (strong, nonatomic) NSMutableArray *cards;
+@property (strong, nonatomic) NSMutableArray<Card *> *cards;
 @end
 
 @implementation Deck
 
-- (NSMutableArray *)cards {
+- (NSMutableArray<Card *> *)cards {
     if (_cards == nil) {
             _cards = [NSMutableArray<Card *> new];
         }
@@ -35,7 +35,7 @@
 - (Card *)drawRandomCard {
     Card *randomCard = nil;
     
-    if ([self.cards count]) {
+    if (self.cards.count > 0) {
         unsigned index = arc4random() % [self.cards count];
         randomCard = self.cards[index];
         [self.cards removeObjectAtIndex:index];

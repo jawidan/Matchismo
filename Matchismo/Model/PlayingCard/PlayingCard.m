@@ -12,11 +12,11 @@
 @synthesize suit = _suit;
 
 - (NSString *)contents {
-    NSArray *rankStrings = [PlayingCard rankStrings];
+    NSArray<NSString *> *rankStrings = [PlayingCard rankStrings];
     return [rankStrings[self.rank] stringByAppendingString:self.suit];
 }
 
-+ (NSArray *)validSuits {
++ (NSArray<NSString *> *)validSuits {
     return @[@"♥️", @"♦️", @"♠️", @"♣️"];
 }
 
@@ -30,7 +30,7 @@
     return _suit ? _suit : @"?";
 }
 
-+ (NSArray *)rankStrings {
++ (NSArray<NSString *> *)rankStrings {
     return @[@"?", @"A", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"J", @"Q", @"K"];
 }
 

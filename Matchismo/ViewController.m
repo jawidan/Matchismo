@@ -5,12 +5,6 @@
 //  Created by Javidan Ibrahimov on 28.05.2024.
 //
 
-//
-//  ViewController.m
-//  Matchismo
-//
-//  Created by Javidan Ibrahimov on 28.05.2024.
-//
 
 #import "ViewController.h"
 #import "PlayingCardDeck.h"
@@ -28,6 +22,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *gameOverLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *cardButton;
+
 @end
 
 @implementation ViewController
@@ -39,7 +35,7 @@
     self.flipCount = 0;
 }
 
-- (IBAction)tappedButton:(UIButton *)sender {
+- (IBAction)buttonTapped:(UIButton *)sender {
     
     if (self.isShowingBack){
         [self showCardFront:sender];
@@ -56,7 +52,7 @@
 }
 
 - (void)showCardFront:(UIButton *)button {
-        PlayingCard *randomCard = (PlayingCard *)[self.deck drawRandomCard];
+    PlayingCard *randomCard = (PlayingCard *)[self.deck drawRandomCard];
     if (randomCard != nil) {
         NSString *cardTitle = [NSString stringWithFormat:@"%@%@", [PlayingCard rankStrings][randomCard.rank], randomCard.suit];
         
@@ -65,7 +61,7 @@
         
     }
     else {
-        [self endTheGame:button];
+        [self endTheGame];
     }
 }
 
@@ -74,9 +70,9 @@
     [button setBackgroundImage:[UIImage imageNamed:@"cardback"] forState:UIControlStateNormal];
 }
 
-- (void)endTheGame:(UIButton *)button {
-    button.enabled = NO;
-    button.highlighted = NO;
+- (void)endTheGame {
+    self.cardButton.enabled = NO;
+    self.cardButton.highlighted = NO;
     self.gameOverLabel.hidden = NO;
 }
 
