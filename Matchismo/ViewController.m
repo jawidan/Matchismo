@@ -60,7 +60,7 @@
     }
     
     self.isShowingBack = !self.isShowingBack;
-    self.flipCount++;
+    self.flipCount += 1;
     
     self.counterLabel.text = [NSString stringWithFormat:@"Number of times you flipped : %lu", self.flipCount];
     
